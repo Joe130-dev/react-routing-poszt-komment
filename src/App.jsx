@@ -5,6 +5,7 @@ import { EgyKomment } from './pages/EgyKomment';
 import { UjKomment } from './pages/UjKomment';
 import { ModKomment } from './pages/ModKomment';
 import { EgyPoszt } from './pages/EgyPoszt';
+import { UjPoszt } from './pages/UjPoszt';
 import './App.css'
 
 export const App = () => {
@@ -42,6 +43,11 @@ export const App = () => {
             <span className="nav-link"><i className="bi bi-info-circle-fill"></i> Új komment</span>
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink to="/poszt-uj" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>
+            <span className="nav-link"><i className="bi bi-plus-circle"></i> Új poszt</span>
+            </NavLink>
+          </li>
         </ul>
       </div>
       </div>
@@ -54,6 +60,7 @@ export const App = () => {
       <Route path="/egykomment/:kommentId" element={<EgyKomment />} />
       <Route path="/komment-mod/:kommentId" element={<ModKomment />} />
       <Route path="/komment-uj" element={<UjKomment />} />
+      <Route path="/poszt-uj" element={<UjPoszt />} />
     </Routes>
     </>
   )
