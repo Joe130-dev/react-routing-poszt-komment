@@ -6,6 +6,7 @@ import { UjKomment } from './pages/UjKomment';
 import { ModKomment } from './pages/ModKomment';
 import { EgyPoszt } from './pages/EgyPoszt';
 import { UjPoszt } from './pages/UjPoszt';
+import { ModPoszt } from './pages/ModPoszt';
 import './App.css'
 
 export const App = () => {
@@ -61,6 +62,7 @@ export const App = () => {
       <Route path="/komment-mod/:kommentId" element={<ModKomment />} />
       <Route path="/komment-uj" element={<UjKomment />} />
       <Route path="/poszt-uj" element={<UjPoszt />} />
+      <Route path="/poszt-mod/:posztId" element={<ModPoszt />} />
     </Routes>
     </>
   )

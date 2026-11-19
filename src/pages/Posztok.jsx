@@ -13,6 +13,9 @@ const CardKomponens = ({ posztok }) => (
                     <p className="card-text">{poszt.body}</p>
                     <Link className="card-link" to={"/egyposzt/" + poszt.id}>
                     <i className="bi bi-eye"></i>Részletek</Link>
+                    <Link className="card-link" to={"/poszt-mod/" + poszt.id}>
+                    <i className="bi bi-pencil-square"></i> Módosítás
+                    </Link>
                 </div>
             </div>
         ))}
